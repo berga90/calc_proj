@@ -1,0 +1,10 @@
+from django.conf.urls import patterns, url
+from Verwalter import views 
+
+urlpatterns = patterns('',
+	url(r'^$', views.index, name='index'),
+	url(r'^register/$', views.register, name = 'register'),
+	url(r'^magtab/$', views.magtab, name = 'magtab'),
+	url(r'^usertab/$', views.usertab, name = 'usertab'),
+	url(r'^logout/$', views.user_logout, name = 'logout'),
+	)

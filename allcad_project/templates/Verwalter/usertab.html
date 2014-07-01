@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Welcome to the User section </title>
+	</head>
+	<body>
+		<strong>Hello {{ user.username }}<strong/><br />
+		
+		{% if user.is_authenticated %}
+		<a href="/Verwalter/logout/"> Logout <a/><br />
+		{% endif %}
+
+	</body>
+</html>

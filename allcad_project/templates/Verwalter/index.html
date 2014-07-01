@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Welcome to calc application </title>
+	</head>
+
+	<body>
+		<h1>Login to CalcApp</h1>
+		
+		<form id="login_form" method="post" action="/Verwalter/" >
+			{% csrf_token %}
+			username: <input type="text" name="username" value="" size="50" />
+			<br />
+			password: <input type="password" name="password" value="" size="50" />
+			<br />
+
+			<input type="submit" value="submit" />
+		</form>	
+
+	</body>
+</html>
